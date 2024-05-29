@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Alerta } from 'src/app/modelo/alerta';
-import { LoginDto } from 'src/app/modelo/dto/LoginDto';
+import { LoginDto } from 'src/app/modelo/dto/loginDto';
 import { AuthService } from 'src/app/servicios/auth.service';
 import { TokenService } from 'src/app/servicios/token.service';
 

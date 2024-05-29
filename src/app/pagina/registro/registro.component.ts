@@ -112,23 +112,7 @@ export class RegistroComponent {
     }
   }
 
-  public subirImagen() {
-
-    if (this.archivos != null && this.archivos.length > 0) {
-      const formData = new FormData();
-      formData.append('file', this.archivos[0]);
-      this.imagenService.subir(formData).subscribe({
-        next: data => {
-        this.crearPacienteDto.foto = data.respuesta.url;
-      },
-        error: error => {
-        this.alerta = { mensaje: error.error, tipo: "danger" };
-      }
-    });
-    } else {
-      this.alerta = { mensaje: 'Debe seleccionar una imagen y subirla', tipo: "danger" };
-    }
-  }
+  
 
   protected readonly ClienteDTO = ClienteDTO;
   protected readonly CrearPacienteDto = CrearPacienteDto;
