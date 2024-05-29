@@ -10,7 +10,7 @@ import { LoginDto } from '../modelo/dto/loginDto';
 })
 export class AuthService {
 
-  private authURL= "http://localhost:8080/api/auth"
+  private authURL= "http://localhost:8080/api/pacientes"
 
   constructor(private http:HttpClient) { }
 
