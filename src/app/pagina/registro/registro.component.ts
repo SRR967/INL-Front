@@ -5,6 +5,7 @@ import { CrearPacienteDto } from 'src/app/modelo/dto/paciente/crear-paciente-dto
 import { AuthService } from 'src/app/servicios/auth.service';
 import { ClinicaService } from 'src/app/servicios/clinica.service';
 import { ImagenService } from 'src/app/servicios/imagen.service';
+import {ClienteDTO} from "../../modelo/dto/paciente/ClienteDTO";
 
 @Component({
   selector: 'app-registro',
@@ -21,6 +22,15 @@ export class RegistroComponent {
   archivos!:FileList;
   alerta!:Alerta
 
+  clienteDTO: ClienteDTO
+  cedula:string;
+  nombre:string;
+  apellido:string;
+  telefono:string;
+  correo:string;
+  contrasena:string;
+
+
   constructor(private authService: AuthService,private clinicaService: ClinicaService, private imagenService: ImagenService){
     this.ciudad=[];
     this.cargarCiudades();
@@ -29,6 +39,14 @@ export class RegistroComponent {
     this.tipoSangre=[];
     this.cargarTipoSangre();
     this.crearPacienteDto = new CrearPacienteDto();
+
+    this.clienteDTO = new ClienteDTO();
+    this.cedula = "";
+    this.nombre = "";
+    this.apellido = "";
+    this.telefono = "";
+    this.correo = "";
+    this.contrasena = "";
   }
 
   public registrar(){
@@ -111,4 +129,7 @@ export class RegistroComponent {
       this.alerta = { mensaje: 'Debe seleccionar una imagen y subirla', tipo: "danger" };
     }
   }
+
+  protected readonly ClienteDTO = ClienteDTO;
+  protected readonly CrearPacienteDto = CrearPacienteDto;
 }

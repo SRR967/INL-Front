@@ -2,19 +2,19 @@
     <div class="row align-items-start">
       <div class="col-2">
         <div class="body-function">
-            <button (click)="mostrarComponenteCrearCita()" class="btn-menu" type="menu">Solicitar Una Cita</button>
-            <button (click)="mostrarComponenteListaConsulta()"  class="btn-menu" type="menu">Ver Historial De Consultas</button>
-            <button (click)="mostrarComponenteListaPqrs()" class="btn-menu" type="menu">Gestion PQRS</button>
+            <button (click)="mostrarComponenteCrearCita()" class="btn-menu" type="menu">Relizar Solicitud</button>
+            <button (click)="mostrarComponenteListaConsulta()"  class="btn-menu" type="menu">Ver Historial De Solicitudes</button>
+<!--            <button (click)="mostrarComponenteListaPqrs()" class="btn-menu" type="menu">Gestion PQRS</button>-->
 
             <div class="abajo" >
                 <button class="btn-function" type="menu" (click)="borrarPerfil()">Cerrar Sesión</button>
-                <button (click)="mostrarComponenteActualizarPaciente()" class="btn-function" type="menu">Actualizar Datos</button>
-                <button class="btn-function" type="menu">Darme de Baja</button>
+<!--                <button (click)="mostrarComponenteActualizarPaciente()" class="btn-function" type="menu">Actualizar Datos</button>-->
+<!--                <button class="btn-function" type="menu">Darme de Baja</button>-->
                 <div  ></div>
             </div>
         </div>
       </div>
-      
+
       <div class="col-10">
 
         <div>
@@ -36,7 +36,7 @@
         <div>
           <app-editar-perfil *ngIf="mostrarActualizarPaciente" ></app-editar-perfil>
         </div>
-        
+
 
       </div>
     </div>

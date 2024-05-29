@@ -10,8 +10,8 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              
-              <div *ngIf="!isLogged; then nologged else logged"></div>  
+
+              <div *ngIf="!isLogged; then nologged else logged"></div>
 
               <ng-template #nologged>
                 <li class="nav-item">
@@ -24,12 +24,12 @@
 
               <ng-template #logged>
                 <div class="text-end">
-                  
+
                   <button type="button" (click)="logout()" class="btn btn-warning">Logout</button>
                 </div>
               </ng-template>
             </ul>
-            
+
           </div>
         </div>
       </nav>
@@ -38,7 +38,7 @@
       <router-outlet></router-outlet>
     </main>
     <footer>
-      <p>TuCanic® Corporation</p>
+      <p>SECCIÓN DE ASUNTOS ANTINARCÓTICOS Y APLICACIÓN DE LA LEY®</p>
     </footer>
   </div>
 </div>

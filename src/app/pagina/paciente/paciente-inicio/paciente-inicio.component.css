@@ -8,6 +8,18 @@
     position: absolute;
     bottom: 0   ;
 }
+.logo-inicio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100px;
+    width: 200px;
+
+    background: #ffff99;
+    color: #333;
+}
+
 
 .body-function .btn-menu{
     background-color: rgba(0, 0, 0, 0);

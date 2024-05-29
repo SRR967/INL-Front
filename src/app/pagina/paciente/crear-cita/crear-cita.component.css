@@ -5,6 +5,13 @@
     display: flex;
 }
 
+.image-space{
+    width: 16vh;
+    margin: 0 50px;
+}
+
+
+
 .title-window{
     font-size: 40px;
     font-weight: 200;
@@ -23,7 +30,7 @@
 .user-image img{
     width: 100%;
     border-radius: 50%;
-} 
+}
 
 .image-space{
     width: 8%;

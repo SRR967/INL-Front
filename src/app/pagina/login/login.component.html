@@ -5,7 +5,7 @@
             <div class="row text-center align-items-center">
                 <div class="col-8">
                     <img class="logo-size" src="../../../assets/images/LogoTucanic.png" alt="">
-                    <p class="phrase-logo">TuCanic</p>
+                    <p class="phrase-logo">I  N  L</p>
                 </div>
                 <div class="col-4">
                     <div class="card">
@@ -13,7 +13,7 @@
                             <p class="title-login">
                                 Iniciar Sesión
                             </p>
-                            <div class="form-floating mb-3 form-size" >    
+                            <div class="form-floating mb-3 form-size" >
                                 <input type="email" name="correo" email="true" class="form-control" placeholder=""
                                 required="true" [(ngModel)]="loginDto.email">
                                 <label for="floatingInput" >Correo</label>
@@ -23,10 +23,10 @@
                                 required="true" [(ngModel)]="loginDto.contrasena">
                                 <label for="floatingInput" >Contraseña</label>
                             </div>
-                            <button class="btn-customize-pr text-btn" 
+                            <button class="btn-customize-pr text-btn"
                             (click)="login()" type="submit" [disabled]="f.invalid">Entrar</button>
                             <div class=" link-recover">
-                                <a routerLink="/recuperarContrasena">¡Olvide mi contraseña!</a>
+<!--                                <a routerLink="/recuperarContrasena">¡Olvide mi contraseña!</a>-->
                             </div>
 
                             <hr>
@@ -34,11 +34,11 @@
                             <button class="btn-outliner" type="submit" routerLink="/registro">Registrarme</button>
 
                         </div>
-                    </div>         
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    
+
 </form>

@@ -7,7 +7,7 @@ import { TokenService } from './servicios/token.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit{
-  title = 'TuCanic';
+  title = 'I N L';
   isLogged= false;
   email:string = "";
   class = 'programacion avanzada';

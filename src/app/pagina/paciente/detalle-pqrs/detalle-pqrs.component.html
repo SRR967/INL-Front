@@ -1,25 +1,28 @@
 <div class="card-body p-5">
     <!-- Mostrar detalles del PQRS si existe -->
     <div *ngIf="pqrs">
-      <label>Código PQRS:</label>
+      <label>ID:</label>
       <p>{{pqrs.idPQRS}}</p>
 
       <label>Código consulta:</label>
       <p>{{pqrs.idConsulta}}</p>
 
-      <<label>Asunto:</label>
-      <p>{{pqrs.asunto}}</p>
+      <<label>Fecha Inicio:</label>
+      <p>{{pqrs.asunto | date: 'medium'}}</p>
 
-      <label>Fecha de creación:</label>
+      <label>Fecha Finalizacion:</label>
       <p>{{pqrs.fechaCreacion | date:'medium'}}</p>
 
-      <label>Tipo PQRS:</label>
+      <label>Estado:</label>
       <p>{{pqrs.tipoPQRS}}</p>
 
-      <label>Estado:</label>
+      <label>Gerente del proyecto:</label>
       <p>{{pqrs.estadoPQRS}}</p>
 
-      <label>Mensaje:</label>
-      <p>{{pqrs.mensaje}}</p>
+<!--      <input class="subir-foto" type="file" formControlName="photo" accept=".application/pdf"-->
+<!--             (change)="onFileChange($event)"/>-->
 
+      <button class="btn-customize-pr"  type="submit"  >Modificar</button>
+
+</div>
 </div>

@@ -9,64 +9,68 @@
   </div>
 
   <div class="body-window">
-    <div class="row align-items-start height-complete">
-      <div class="col-6 height-complete">
-
-        <div class="card card-body-window">
-          <div class="card-body">
-            <div class="title-card-ctz">Citas Pendientes</div>
-
-            <div class="card-items-ctz">
-              <div *ngFor="let cita of citas" class="card mb-3">
-                <div class="row g-0">
-                  <div class="col-md-2">
-                    <div class="rounded-start img-card-info"></div>
-                  </div>
-                  <div class="col-md-10">
-                    <div class="card-body">
-                      <h6 class="card-title">{{cita.asunto}}</h6>
-                      <p class="card-text"><small class="text-body-secondary">{{cita.fecha}}</small></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="abajo">
-              <button routerLink="/listarCitas" class="btn-menu see-content">Ver</button>
-            </div>
-          </div>
-        </div>
-
+<!--    <div class="row align-items-start height-complete">-->
+      <div>
+        <img class="logo-inicio" src="../../../assets/images/LogoTucanic.png" alt="">
       </div>
-      <div class="col-6 height-complete">
 
-        <div class="card card-body-window">
-          <div class="card-body card-longer">
-            <div class="title-card-ctz">PQRS Activos</div>
+<!--      <div class="col-6 height-complete">-->
 
-            <div class="card-items-ctz">
-              <div *ngFor="let pqrsItem of pqrs" class="card mb-3">
-                <div class="row g-0">
-                  <div class="col-md-2">
-                    <div class="rounded-start img-card-info"></div>
-                  </div>
-                  <div class="col-md-10">
-                    <div class="card-body">
-                      <h6 class="card-title">{{pqrsItem.asunto}}</h6>
-                      <p class="card-text"><small class="text-body-secondary">{{pqrsItem.fecha}}</small></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="abajo">
-              <button routerLink="/listarPqrs" class="btn-menu">Ver</button>
-            </div>
+<!--        <div class="card card-body-window">-->
+<!--          <div class="card-body">-->
+<!--            <div class="title-card-ctz">Citas Pendientes</div>-->
 
-          </div>
-        </div>
-      </div>
+<!--            <div class="card-items-ctz">-->
+<!--              <div *ngFor="let cita of citas" class="card mb-3">-->
+<!--                <div class="row g-0">-->
+<!--                  <div class="col-md-2">-->
+<!--                    <div class="rounded-start img-card-info"></div>-->
+<!--                  </div>-->
+<!--                  <div class="col-md-10">-->
+<!--                    <div class="card-body">-->
+<!--                      <h6 class="card-title">{{cita.asunto}}</h6>-->
+<!--                      <p class="card-text"><small class="text-body-secondary">{{cita.fecha}}</small></p>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+
+<!--            <div class="abajo">-->
+<!--              <button routerLink="/listarCitas" class="btn-menu see-content">Ver</button>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+
+<!--      </div>-->
+<!--      <div class="col-6 height-complete">-->
+
+<!--        <div class="card card-body-window">-->
+<!--          <div class="card-body card-longer">-->
+<!--            <div class="title-card-ctz">PQRS Activos</div>-->
+
+<!--            <div class="card-items-ctz">-->
+<!--              <div *ngFor="let pqrsItem of pqrs" class="card mb-3">-->
+<!--                <div class="row g-0">-->
+<!--                  <div class="col-md-2">-->
+<!--                    <div class="rounded-start img-card-info"></div>-->
+<!--                  </div>-->
+<!--                  <div class="col-md-10">-->
+<!--                    <div class="card-body">-->
+<!--                      <h6 class="card-title">{{pqrsItem.asunto}}</h6>-->
+<!--                      <p class="card-text"><small class="text-body-secondary">{{pqrsItem.fecha}}</small></p>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <div class="abajo">-->
+<!--              <button routerLink="/listarPqrs" class="btn-menu">Ver</button>-->
+<!--            </div>-->
+
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
     </div>
-  </div>
+<!--  </div>-->
 </div>

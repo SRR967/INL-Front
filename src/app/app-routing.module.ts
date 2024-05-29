@@ -23,55 +23,53 @@ import { VerDiasLibresComponent } from './pagina/medico/ver-dias-libres/ver-dias
 const routes: Routes = [
   {path: '', redirectTo:'/inicio', pathMatch: 'full'},
   {path: 'inicio', component: InicioComponent},
-  {path: "login", component: LoginComponent, canActivate:[LoginGuard]},
-  {path: "registro", component: RegistroComponent, canActivate:[LoginGuard]},
+  {path: "login", component: LoginComponent},
+  {path: "registro", component: RegistroComponent},
   {path: "recuperarContrasena", component: RecuperarContrasenaComponent},
   {path: "pacienteInicio", loadChildren: () => import( './pagina/paciente/paciente.module' ).then( (m) => m.PacienteModule),
-    canActivateChild: [RolesGuard], data:{expectedRole:["paciente"]}},
+     data:{expectedRole:["paciente"]}},
   {path: "medicoInicio", loadChildren:()=> import('./pagina/medico/medico.module').then( (m) => m.MedicoModule),
-    canActivateChild: [RolesGuard], data:{expectedRole:["medico"]}},
-  {path: "crearPqrs", component: CrearPQRSComponent, canActivate: [RolesGuard], data: {
-    expectedRole: ["paciente"]
-  }},
-  {path: "detallePqrs/:codigo", component: DetallePqrsComponent, canActivate: [RolesGuard], data: {
+     data:{expectedRole:["medico"]}},
+  {path: "crearPqrs", component: CrearPQRSComponent},
+  {path: "detallePqrs/:codigo", component: DetallePqrsComponent,   data: {
     expectedRole: ["paciente"]
   } },
-  {path: "listarPqrs", component: ListarPQRSComponent, canActivate: [RolesGuard], data: {
+  {path: "listarPqrs", component: ListarPQRSComponent,   data: {
     expectedRole: ["paciente"]
   } },
-  {path: "listarCitas", component: ListarCitasComponent, canActivate: [RolesGuard], data: {
+  {path: "listarCitas", component: ListarCitasComponent,   data: {
     expectedRole: ["paciente"]
   } },
 
-  {path: "detalleCita/:codigo", component: DetalleCitaComponent, canActivate: [RolesGuard], data: {
+  {path: "detalleCita/:codigo", component: DetalleCitaComponent,   data: {
     expectedRole: ["paciente"]
   } },
 
-  {path: "listarConsultas", component: ListarConsultasComponent, canActivate: [RolesGuard], data: {
+  {path: "listarConsultas", component: ListarConsultasComponent,   data: {
     expectedRole: ["paciente"]
   } },
 
-  {path: "detalleConsulta/:codigo", component: DetalleConsultaComponent, canActivate: [RolesGuard], data: {
+  {path: "detalleConsulta/:codigo", component: DetalleConsultaComponent,   data: {
     expectedRole: ["paciente"]
   } },
 
-  {path: "listarCitasMedico", component: ListarCitasMedicoComponent, canActivate: [RolesGuard], data: {
+  {path: "listarCitasMedico", component: ListarCitasMedicoComponent,   data: {
     expectedRole: ["medico"]
   } },
 
-  {path: "detalleCitaMedico/:codigo", component: DetalleCitaMedicoComponent, canActivate: [RolesGuard], data: {
+  {path: "detalleCitaMedico/:codigo", component: DetalleCitaMedicoComponent,   data: {
     expectedRole: ["medico"]
   } },
 
-  {path: "atender/:codigo", component: RadicarConsultaComponent, canActivate: [RolesGuard], data: {
+  {path: "atender/:codigo", component: RadicarConsultaComponent,   data: {
     expectedRole: ["medico"]
   } },
 
-  {path: "historialConsultas/:codigo", component: CitasAtendidasComponent, canActivate: [RolesGuard], data: {
+  {path: "historialConsultas/:codigo", component: CitasAtendidasComponent,   data: {
     expectedRole: ["medico"]
   } },
 
-  {path: "listarDiaMedico/:codigo", component: VerDiasLibresComponent, canActivate: [RolesGuard], data: {
+  {path: "listarDiaMedico/:codigo", component: VerDiasLibresComponent,   data: {
     expectedRole: ["medico"]
   } },
 
