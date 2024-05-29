@@ -39,6 +39,6 @@ export class DetallePqrsComponent {
   }
 
   onFileChange($event: Event) {
-    
+
   }
 }
