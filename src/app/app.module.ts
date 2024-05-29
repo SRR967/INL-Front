@@ -8,7 +8,6 @@ import { FormsModule } from '@angular/forms';
 import { InicioComponent } from './pagina/inicio/inicio.component';
 import { LoginComponent } from './pagina/login/login.component';
 import { RegistroComponent } from './pagina/registro/registro.component';
-import { RecuperarContrasenaComponent } from './pagina/recuperar-contrasena/recuperar-contrasena.component';
 import { CrearPQRSComponent } from './pagina/paciente/crear-pqrs/crear-pqrs.component';
 import { ImagenesComponent } from './pagina/imagenes/imagenes.component';
 import { AlertaComponent } from './pagina/alerta/alerta.component';
@@ -20,7 +19,6 @@ import { UsuarioInterceptor } from './interceptor/usuario.interceptor';
     InicioComponent,
     LoginComponent,
     RegistroComponent,
-    RecuperarContrasenaComponent,
     AlertaComponent
   ],
 
