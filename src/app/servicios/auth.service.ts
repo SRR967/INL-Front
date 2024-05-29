@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { CrearPacienteDto } from '../modelo/dto/paciente/crear-paciente-dto';
 import { MensajeDTO } from '../modelo/dto/MensajeDTO';
 import { Observable } from 'rxjs';
-import { LoginDto } from '../modelo/dto/LoginDto';
+import { LoginDto } from '../modelo/dto/loginDto';
 
 @Injectable({
   providedIn: 'root'
